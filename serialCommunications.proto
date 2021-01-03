@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+message ControllerCommands {
+  int32 a0 = 1; // null || joystick right +up -down
+  int32 a1 = 2; // null || joystick right +left -right 
+  int32 a2 = 3; // joystick left +left -right 
+  int32 a3 = 4; // joystick left +up -down
+  bool d2 = 5;   // "X" || right thumb press
+  bool d3 = 6;   // right finger
+  bool d4 = 7;   // "square" || null
+  bool d5 = 8;   // left thumb press
+  bool d6 = 9;   // left finger
+  bool d8 = 10;  // "triangle" || null
+  bool d9 = 11;  // "circle" || null
+}
+
+message RoverTellemetry {
+    bool faultLS = 1;
+    bool faultRS = 2;
+    uint32 motorAmpsLS = 3;
+    uint32 motorAmpsRS = 4;
+    uint32 vBatt = 5;
+}
