@@ -1,8 +1,6 @@
 #ifndef SCHEDULER_H
 #define SCHEDULER_H
 
-#include <TaskScheduler.h>
-
 // #define _TASK_TIMECRITICAL      // Enable monitoring scheduling overruns
 #define _TASK_SLEEP_ON_IDLE_RUN // Enable 1 ms SLEEP_IDLE powerdowns between tasks if no callback methods were invoked during the pass
 #define _TASK_STATUS_REQUEST    // Compile with support for StatusRequest functionality - triggering tasks on status change events in addition to time only
@@ -15,6 +13,8 @@
 // #define _TASK_INLINE            // Make all methods "inline" - needed to support some multi-tab, multi-file implementations
 // #define _TASK_TIMEOUT           // Support for overall task timeout
 // #define _TASK_OO_CALLBACKS      // Support for dynamic callback method binding
+
+#include <TaskScheduler.h>
 
 #ifdef _DEBUG_
 #define _PP(a) SerialUSB.print(a);
