@@ -8,9 +8,9 @@
 //////////////////////////
 // MicroOLED Definition //
 //////////////////////////
-#define PIN_RESET 11 // Connect RST to pin 9
-#define PIN_DC    12 // Connect DC to pin 8
 #define PIN_CS    10 // Connect CS to pin 10
+#define PIN_RESET 11 // Connect RST to pin 11
+#define PIN_DC    12 // Connect DC to pin 12
 #define DC_JUMPER 0  // Set to either 0 (default) or 1 based on jumper, matching the value of the DC Jumper
 
 
